@@ -1,0 +1,45 @@
+#display > * {
+    border: 1px solid black;
+}
+body {
+    background-color: lavender;
+}
+#display {
+    display: grid;
+    grid-template-areas: 
+    "headerT headerT headerT"
+    "drop drop drop"
+    "yourR yourR yourR";
+    width: 75%;
+    margin: 0 auto;
+    
+}
+
+#title{
+
+}
+img {
+    grid-area: img;
+}
+
+#header-title {
+    grid-area: headerT;
+    background-color: skyblue;
+    font-size: larger;
+    text-align: right;
+    width: ;
+}
+
+
+
+#dropdown {
+    grid-area: drop;
+}
+
+#your-review{
+   grid-area: yourR; 
+}
+
+
+
+
