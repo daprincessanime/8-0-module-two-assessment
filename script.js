@@ -14,6 +14,15 @@ for(let movie of movies){
     option.textContent = movie.title;
     dropDown.append(option);
 }
+
+
+dropDown.addEventListener("change", ()=>{
+    for(let movie of movies){
+        if(dropDown.value === movie.title){
+
+        }
+    }
+})
 })
 
 
