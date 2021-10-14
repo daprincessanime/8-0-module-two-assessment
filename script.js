@@ -31,11 +31,16 @@ dropDown.addEventListener("change", ()=>{
         }
     }
 })
-let listReview =document.querySelector("ul")
-let myReview = document.createElement("li")
+const yourRe = document.querySelector("#your-review")
+const ulReview =document.querySelector("ul");
+yourRe.addEventListener("submit", (event)=>{
+event.preventDefault();
 
+let myReview = document.createElement("li");
+myReview.textContent = selectedMovie.title;
+ulReview.append(myReview);
 })
-
+})
 
 
 

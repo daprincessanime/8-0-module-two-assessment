@@ -9,7 +9,8 @@ body {
     grid-template-areas: 
     "title title title"
     "movieS movieS movieS"
-    "yourR yourR yourR";
+    "yourR yourR yourR"
+    "review review review";
     width: 75%;
     grid-gap: 5px;
     max-width: 900px;
@@ -30,7 +31,9 @@ img {
     width: 400px;  
     
 }
-
+ul {
+    grid-area: review;
+}
 
 #movie-selector{
     grid-area: movieS;
