@@ -7,33 +7,40 @@ body {
 #display {
     display: grid;
     grid-template-areas: 
-    "headerT headerT headerT"
-    "drop drop drop"
+    "title title title"
+    "movieS movieS movieS"
     "yourR yourR yourR";
     width: 75%;
+    grid-gap: 5px;
+    max-width: 900px;
     margin: 0 auto;
     
 }
 
 #title{
-
+    grid-area: title;
+    background-color: skyblue;
 }
 img {
-    grid-area: img;
+    
+    
 }
 
 #header-title {
-    grid-area: headerT;
-    background-color: skyblue;
+   
+    
     font-size: larger;
     text-align: right;
-    width: ;
+    /* width: 75%; */
+ 
+}
+#movie-selector{
+    grid-area: movieS;
 }
 
 
-
 #dropdown {
-    grid-area: drop;
+    
 }
 
 #your-review{
