@@ -14,34 +14,29 @@ body {
     grid-gap: 5px;
     max-width: 900px;
     margin: 0 auto;
-    
+    font-family:'Courier New', Courier, monospace;
 }
 
+h1 {
+    
+}
 #title{
-    grid-area: title;
+    font-size: 10px;
+    text-align: right;
     background-color: skyblue;
 }
 img {
-    
+   
+    width: 400px;  
     
 }
 
-#header-title {
-   
-    
-    font-size: larger;
-    text-align: right;
-    /* width: 75%; */
- 
-}
+
 #movie-selector{
     grid-area: movieS;
 }
 
 
-#dropdown {
-    
-}
 
 #your-review{
    grid-area: yourR; 
