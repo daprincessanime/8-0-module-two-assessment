@@ -1,50 +1,54 @@
-#display > * {
+/* body > * {
     border: 1px solid black;
-}
+} */
 body {
-    background-color: lavender;
-}
-#display {
     display: grid;
     grid-template-areas: 
-    "title title title"
-    "movieS movieS movieS"
-    "yourR yourR yourR"
-    "review review review";
+    "header header "
+    "movieS . "
+    "display display"
+    "yourR yourR" ;
+    grid-template-columns: 1fr 1fr;
+    background-color: lavender;
+    font-family: monospace;
     width: 75%;
-    grid-gap: 5px;
-    max-width: 900px;
-    margin: 0 auto;
-    font-family:'Courier New', Courier, monospace;
+    margin: 10px auto;
+    grid-gap: 10px;
 }
 
-h1 {
-    
-}
 #title{
-    font-size: 10px;
-    text-align: right;
     background-color: skyblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: header;
 }
-img {
-   
-    width: 400px;  
-    
-}
-ul {
-    grid-area: review;
+#title img {
+   width: 300px;  
 }
 
 #movie-selector{
     grid-area: movieS;
+    text-align: center;
 }
+#dropdown{
+    width: 200px;
+}
+#display-info{
+    grid-area: display;
+    min-height: 50px;
 
-
-
+}
 #your-review{
-   grid-area: yourR; 
+   grid-area: yourR;
+   margin: 0 auto; 
 }
 
+#your-review input[type="submit"]{
+    width: 200px;
+}
 
+#display-info, #your-review, #movie-selector{
+    padding: 10px;
+}
 
 

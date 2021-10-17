@@ -20,9 +20,9 @@ const yearRelease = document.querySelector("#year-release");
 const movieDescr =document.querySelector("#descriptions");
 
 
-dropDown.addEventListener("change", ()=>{
+dropDown.addEventListener("change", (e)=>{
     for(let movie of movies){
-        if(dropDown.value === movie.title){
+        if(e.target.value === movie.title){
             selectedMovie = movie;
             engTitle.textContent = movie.title;
             yearRelease.textContent = movie.release_date;
@@ -33,12 +33,15 @@ dropDown.addEventListener("change", ()=>{
 })
 const yourRe = document.querySelector("#your-review")
 const ulReview =document.querySelector("ul");
+
 yourRe.addEventListener("submit", (event)=>{
 event.preventDefault();
 
 let myReview = document.createElement("li");
-myReview.textContent = selectedMovie.title;
+let reviewContent =document.querySelector("#written-review");
+myReview.innerHTML = `<b>${selectedMovie.title}:<b> ${reviewContent.value}`;
 ulReview.append(myReview);
+reviewContent.value = "";
 })
 })
 
