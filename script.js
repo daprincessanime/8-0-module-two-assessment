@@ -18,6 +18,7 @@ for(let movie of movies){
 const engTitle = document.querySelector("#movie-title");
 const yearRelease = document.querySelector("#year-release");
 const movieDescr =document.querySelector("#descriptions");
+const posterMovie = document.querySelector("#poster-image")
 
 
 dropDown.addEventListener("change", (e)=>{
@@ -27,7 +28,7 @@ dropDown.addEventListener("change", (e)=>{
             engTitle.textContent = movie.title;
             yearRelease.textContent = movie.release_date;
             movieDescr.textContent = movie.description;
-            
+            posterMovie.src = movie.image;
         }
     }
 })
